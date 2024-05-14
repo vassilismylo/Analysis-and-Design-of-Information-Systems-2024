@@ -1,0 +1,264 @@
+/* xrwmata
+laxani: #87bd25
+mesaio: #2fad0f
+skouro: #26890d*/
+
+header{
+
+    .header{
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1500 !important;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        height: 70px;
+        font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+        
+    }
+    
+    #h_logo{
+    
+        height: 35px;
+        padding: 20px;
+        padding-top: 25px;
+        
+    }
+    
+    .search{
+    
+        overflow: hidden;
+        border-radius: 20px;
+        position: absolute;
+        right: 100px;
+        margin: 16.5px;
+        background-color: grey;
+    
+    }
+    
+    #s_box{
+    
+        border: none;
+        height: 35px;
+        width: 200px;
+        border-radius: 20px;
+        background-color: transparent;
+        padding-inline-start: 15px;
+        padding-inline-end: 40px;
+        
+    }
+    
+    #s_but{
+        
+        padding: 8px 13px 7px 13px;
+        right: 0;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        border-radius: 25px;
+        position: absolute;
+    
+    }
+    
+    #s_img{
+        height: 20px;
+        width: 20px;
+    }
+    
+    #s_box::placeholder{
+        font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+        color: white;
+    }
+    
+    #s_box:hover{
+        background-color: rgb(145, 145, 145);
+    }
+    
+    #s_but:hover {
+        background-color: rgb(145, 145, 145); /* Lighter background color on hover */
+    }
+    
+    #s_box:focus{
+        font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+        color: white;
+    }
+    
+    .language{
+        
+        margin: 15px;
+        top: 0;
+        right: 48.5px;
+        position: absolute;
+    }
+    
+    #lang_menu{
+    
+        background-color: transparent;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        padding: 6px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+    }
+    
+    .lang_opt{
+    
+        border-radius: 5px;
+        position: absolute;
+        display: none;
+        padding: 5px;
+        top: calc(100% + 43px);
+        right: 0;
+        background-color: grey;
+    }
+    
+    .lang_opt a {
+    
+        display: block;
+        padding: 5px;
+        font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    #gr{
+        font-weight: bold;
+    }
+    
+    #lang_menu:hover{
+        background-color: rgb(26, 26, 26);
+    }
+    
+    .language:hover .lang_opt{
+    
+        padding: 5px;
+        display: block;
+    }
+    
+    .lang_opt a:hover{
+        border-radius: 5px;
+        background-color: rgb(167, 165, 165);
+    }
+    
+    .lang_opt:hover{
+        background-color: grey;
+    }
+    
+    #globe_icon{
+        background-color: transparent;
+        height: 30px;
+    }
+    
+    .user{
+    
+        margin: 15px;
+        top: 0;
+        right: 0;
+        position: absolute;
+    
+    }
+    
+    #us_menu{
+    
+        background-color: black;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        padding: 5.5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+    }
+    
+    .us_opt{
+    
+        border-radius: 5px;
+        position: absolute;
+        display: none;
+        padding: 5px;
+        top: calc(100% + 43px);
+        right: 0;
+        background-color: grey;
+    
+    }
+    
+    .us_opt a {
+    
+        display: block;
+        padding: 5px;
+        font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    #us_menu:hover{
+        background-color: rgb(26, 26, 26);
+    }
+    
+    .user:hover .us_opt{
+        padding: 5px;
+        display: block;
+    }
+    
+    .us_opt a:hover{
+        border-radius: 5px;
+        background-color: rgb(167, 165, 165);
+    }
+    .us_opt:hover{
+        background-color: grey;
+    }
+    
+    #us_icon{
+        background-color: transparent;
+        height: 31px;
+    }
+    
+    .nav_bar{
+    
+        height: 70px;
+        position: relative;
+        left: 10px;
+    }
+    
+    .nav_l{
+    
+        
+        cursor: pointer;
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+        overflow: hidden;
+        
+    }
+    
+    .nav_l li{
+    
+        text-align: center;
+        padding: 24px 15px 24px 15px;
+        float: left;
+    
+    }
+    
+    .nav_l a{
+    
+        text-decoration: none;
+        color: white;
+    
+    }
+    
+    .nav_l :hover{
+    
+        a{color: #87bd25;}
+        padding-bottom: 19.5px;
+        border-bottom: 4.5px solid #87bd25;
+    }
+    }
