@@ -1,362 +1,208 @@
-/* xrwmata
-laxani: #87bd25
-mesaio: #2fad0f
-skouro: #26890d*/
-
-header {
-
-    height: 70px;
-
-    .header {
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1500 !important;
-        display: flex;
-        align-items: center;
-        background-color: black;
-        height: 70px;
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-
-    }
-
-    #h_logo {
-
-        height: 35px;
-        padding: 20px;
-        padding-top: 25px;
-
-    }
-
-    .search {
-
-        overflow: hidden;
-        border-radius: 20px;
-        position: absolute;
-        right: 100px;
-        margin: 16.5px;
-        background-color: grey;
-
-    }
-
-    #s_box {
-
-        border: none;
-        height: 35px;
-        width: 200px;
-        border-radius: 20px;
-        background-color: transparent;
-        padding-inline-start: 15px;
-        padding-inline-end: 40px;
-
-    }
-
-    #s_but {
-
-        padding: 8px 13px 7px 13px;
-        right: 0;
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-        border-radius: 25px;
-        position: absolute;
-
-    }
-
-    #s_img {
-        height: 20px;
-        width: 20px;
-    }
-
-    #s_box::placeholder {
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        color: white;
-    }
-
-    #s_box:hover {
-        background-color: rgb(145, 145, 145);
-    }
-
-    #s_but:hover {
-        background-color: rgb(145, 145, 145);
-        
-    }
-
-    #s_box:focus {
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        color: white;
-    }
-
-    .language {
-
-        margin: 15px;
-        top: 0;
-        right: 48.5px;
-        position: absolute;
-    }
-
-    #lang_menu {
-
-        background-color: transparent;
-        border: none;
-        border-radius: 100%;
-        cursor: pointer;
-        padding: 6px;
-        position: absolute;
-        right: 0;
-        top: 0;
-
-    }
-
-    .lang_opt {
-
-        border-radius: 5px;
-        position: absolute;
-        display: block;
-        padding: 5px;
-        top: calc(100% + 43px);
-        right: 0;
-        background-color: grey;
-    }
-
-    .lang_opt a {
-
-        display: block;
-        padding: 5px;
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
-    }
-
-    #gr {
-        font-weight: bold;
-    }
-
-    #lang_menu:hover {
-        background-color: rgb(26, 26, 26);
-    }
-
-    .language:hover .lang_opt {
-
-        pointer-events: auto;
-        opacity: 1;
-    }
-
-    .lang_opt a:hover {
-        border-radius: 5px;
-        background-color: rgb(167, 165, 165);
-    }
-
-    .lang_opt:hover {
-        background-color: grey;
-    }
-
-    #globe_icon {
-        background-color: transparent;
-        height: 30px;
-    }
-
-    .user {
-
-        margin: 15px;
-        top: 0;
-        right: 0;
-        position: absolute;
-
-    }
-
-    #us_menu {
-
-        background-color: black;
-        border: none;
-        border-radius: 100%;
-        cursor: pointer;
-        padding: 5.5px;
-        position: absolute;
-        right: 0;
-        top: 0;
-
-    }
-
-    .us_opt {
-
-        border-radius: 5px;
-        position: absolute;
-        display: block;
-        padding: 5px;
-        top: calc(100% + 43px);
-        right: 0;
-        background-color: grey;
-
-    }
-
-    .us_opt a {
-
-        display: block;
-        padding: 5px;
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
-    }
-
-    #us_menu:hover {
-        background-color: rgb(26, 26, 26);
-    }
-
-    .user:hover .us_opt {
-        
-        pointer-events: auto;
-        opacity: 1;
-    }
-
-    .us_opt a:hover {
-        border-radius: 5px;
-        background-color: rgb(167, 165, 165);
-    }
-
-    .us_opt:hover {
-        background-color: grey;
-    }
-
-    #us_icon {
-        background-color: transparent;
-        height: 31px;
-    }
-
-    .nav_bar {
-
-        height: 70px;
-        position: relative;
-        left: 10px;
-    }
-
-    .nav_l {
-
-        
-        cursor: pointer;
-        list-style: none;
-        padding: 0px;
-        margin: 0;
-        overflow: hidden;
-
-    }
-
-    .nav_l li {
-
-        text-align: center;
-        padding: 24px 15px 24px 15px;
-        float: left;
-
-    }
-
-    .nav_l a {
-
-        text-decoration: none;
-        color: white;
-
-    }
-
-    .nav_l li:hover {
-
-        a {
-            color: #87bd25;
-        }
-
-        padding-bottom: 19.5px;
-        border-bottom: 4.5px solid #87bd25;
-    }
-
-    #s_box, #s_but, #lang_menu, #us_menu{
-
-        transition-duration: 0.3s;
-
-    }
-
-    .lang_opt a, .us_opt a{
-
-        transition-duration: 0.3s;
-    }
-
-    .lang_opt, .us_opt{
-
-        pointer-events: none;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-
-    .nav_l li a{
-
-        transition: color 0.3s;
-    }
-}
-
+/* Βασικές Ρυθμίσεις Σώματος */
 body {
-    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(213, 229, 244);
-    text-decoration: none;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    background-color: #eaeaea;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    padding: 20px;
-    margin-top: 70px;
+/* Header Ρυθμίσεις */
+header {
+    height: 70px;
 }
 
-.row {
-    display: flex;
+.header {
+
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    justify-content: center;
-    margin-bottom: 20x; 
-}
-
-
-.row .button {
-    margin: 20px;
-}
-
-.button {
+    z-index: 1500 !important;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex: 1;
-    max-width: 500px;
-    max-height: 1000px;
-    border: none;
-    color: white;
-    padding: 80px 70px;
-    text-align: center;
-    text-decoration: none;
+    justify-content: space-between;
+    background-color: black;
+    height: 70px;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+.head_left, .head_right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#h_logo {
+    height: 35px;
+    padding: 25px 20px 20px;
+}
+
+/* Ρυθμίσεις Πλοήγησης */
+.nav_bar {
+    height: 70px;
+    position: relative;
+    left: 10px; 
+}
+
+.nav_l {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    overflow: auto;
     cursor: pointer;
-    border-radius: 60px; 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -.24px;
-    transition: all .15s;
-    background-color: #26890d;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.button:hover {
-    background-color: #2fad0f;
-    color: black;
-    transform: scale(1.125);
+.nav_l li {
+    text-align: center;
+    padding: 24px 15px;
+    float: left;
 }
-.gif-image {
-    max-width: 100px; 
-    max-height: 100px; 
-    margin-right: 20px; 
-}
-a{
+
+.nav_l a {
     text-decoration: none;
+    color: white;
 }
 
+.nav_l li:hover {
+    padding-bottom: 19.5px;
+    border-bottom: 4.5px solid #87bd25;
+}
+
+.nav_l li:hover a {
+    color: #87bd25;
+}
+
+.nav_l li a{
+    transition: color 0.3s;
+}
+
+/* Αναζήτηση */
+.search {
+    border-radius: 20px;
+    margin: 16.5px 25px 16.5px 16.5px;
+    background-color: grey;
+    height: 35px;
+    position: relative;
+}
+
+.search form {
+    height: 100%;
+    display: flex;
+}
+
+#s_box {
+    overflow: auto;
+    border: none;
+    height: 100%;
+    width: 200px;
+    flex-grow: 1;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0 45px 0 15px;
+}
+
+#s_but {
+    padding: 8px 13px 7px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+#s_img {
+    height: 20px;
+    width: 20px;
+}
+
+#s_box::placeholder, #s_box:focus {
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    color: white;
+}
+
+#s_box:hover, #s_but:hover {
+    background-color: rgb(145, 145, 145);
+}
+
+#s_box, #s_but{
+    transition-duration: 0.3s;
+}
+
+#s_box:focus-visible{
+    outline: white  1px solid;
+    box-shadow: 0px 0px 5px white;
+}
+
+/* Ρυθμίσεις Γλώσσας & Χρήστη */
+.language, .user {
+    margin: 15px 20px 10px 0;
+    position: relative;
+    z-index: 1600;
+}
+
+#lang_menu, #us_menu {
+    background-color: black;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 1601;
+    transition-duration: 0.3s;
+}
+
+#lang_menu:hover, #us_menu:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+.lang_opt, .us_opt {
+    border-radius: 5px;
+    position: absolute;
+    display: block;
+    padding: 5px;
+    top: 100%;
+    right: 0;
+    background-color: grey;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1602;
+    transition-duration: 0.3s;
+}
+
+.lang_opt a, .us_opt a {
+    display: block;
+    padding: 5px;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.lang_opt a:hover, .us_opt a:hover {
+    background-color: rgb(167, 165, 165);
+}
+
+.language:hover .lang_opt, .user:hover .us_opt {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#globe_icon, #us_icon {
+    background-color: transparent;
+    height: 30px;
+}
+
+#us_icon {
+    height: 31px;
+}
+
+#gr {
+    font-weight: bold;
+}
