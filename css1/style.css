@@ -1,3 +1,15 @@
+* {
+    text-transform: none !important;
+}
+
+/* Βασικές Ρυθμίσεις Σώματος */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+    background-color: #eaeaea;
+}
+
 /* Header Ρυθμίσεις */
 header {
     height: 70px;
@@ -208,18 +220,6 @@ header {
 
 #gr {
     font-weight: bold;
-}
-
-* {
-    text-transform: none !important;
-}
-
-/* Βασικές Ρυθμίσεις Σώματος */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-    background-color: #eaeaea;
 }
 
 /* Κύριο Περιεχόμενο */
