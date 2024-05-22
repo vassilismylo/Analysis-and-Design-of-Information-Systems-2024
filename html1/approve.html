@@ -11,175 +11,176 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-        <style>
-          
-            .main_cont {
+    <style>
+        .main_cont {
             flex-direction: column;
         }
+
         .box {
-    margin: 25px 0 50px 0;
-}
-/* Επιλογές */
-.options {
-    width: 20%;
-}
+            margin: 25px 0 50px 0;
+        }
 
-.opt {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+        /* Επιλογές */
+        .options {
+            width: 20%;
+        }
 
-.opt input[type="radio"] {
-    display: none;
-}
+        .opt {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
 
-.opt label {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 1px 1px 5px rgb(103, 103, 103);
-    width: 100px;
-    height: 35px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: all 0.2s ease;
-}
+        .opt input[type="radio"] {
+            display: none;
+        }
 
-.opt label:hover {
-    scale: 1.1;
-}
+        .opt label {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 1px 1px 5px rgb(103, 103, 103);
+            width: 100px;
+            height: 35px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.2s ease;
+        }
 
-.opt label[for^="reject"]:hover {
-    box-shadow: 0 0 5px #e11919;
-}
+        .opt label:hover {
+            scale: 1.1;
+        }
 
-.opt label[for^="approve"]:hover {
-    box-shadow: 0 0 5px #299a0d;
-}
+        .opt label[for^="reject"]:hover {
+            box-shadow: 0 0 5px #e11919;
+        }
 
-.opt label[for^="reject"] {
-    color: #e11919;
-    border: #e11919bc 2px solid;
-}
+        .opt label[for^="approve"]:hover {
+            box-shadow: 0 0 5px #299a0d;
+        }
 
-.opt label[for^="approve"] {
-    color: #299a0d;
-    border: #2da70fbc 2px solid;
-}
+        .opt label[for^="reject"] {
+            color: #e11919;
+            border: #e11919bc 2px solid;
+        }
 
-.opt input[id^="approve"]:checked~label[for^="approve"] {
-    background-color: #2da70f;
-    color: white;
-}
+        .opt label[for^="approve"] {
+            color: #299a0d;
+            border: #2da70fbc 2px solid;
+        }
 
-.opt input[id^="reject"]:checked~label[for^="reject"] {
-    background-color: #e61212;
-    color: white;
-}
+        .opt input[id^="approve"]:checked~label[for^="approve"] {
+            background-color: #2da70f;
+            color: white;
+        }
 
-.opt input[id^="reject"]:checked~.reason_cont .reason_input {
-    cursor: pointer;
-    pointer-events: auto;
-    opacity: 1;
-}
+        .opt input[id^="reject"]:checked~label[for^="reject"] {
+            background-color: #e61212;
+            color: white;
+        }
 
-.reason_input {
-    height: 35px;
-    width: 150px;
-    padding: 0 8px;
-    font-family: inherit;
-    border: #ce1414bc 2px solid;
-    border-radius: 12px;
-    box-shadow: 1px 1px 5px rgb(103, 103, 103);
-    opacity: 0.6;
-    pointer-events: none;
-}
+        .opt input[id^="reject"]:checked~.reason_cont .reason_input {
+            cursor: pointer;
+            pointer-events: auto;
+            opacity: 1;
+        }
 
-.reason_input:hover {
-    scale: 1.05;
-    box-shadow: 0 0 5px #e11919;
-}
+        .reason_input {
+            height: 35px;
+            width: 150px;
+            padding: 0 8px;
+            font-family: inherit;
+            border: #ce1414bc 2px solid;
+            border-radius: 12px;
+            box-shadow: 1px 1px 5px rgb(103, 103, 103);
+            opacity: 0.6;
+            pointer-events: none;
+        }
 
-.reason_input:focus-visible {
-    border: #e30a0a 2.5px solid;
-    outline: none;
-    box-shadow: 0 0 5px #e11919;
-}
+        .reason_input:hover {
+            scale: 1.05;
+            box-shadow: 0 0 5px #e11919;
+        }
 
-.reason_input::placeholder {
-    color: #e11919;
-}
+        .reason_input:focus-visible {
+            border: #e30a0a 2.5px solid;
+            outline: none;
+            box-shadow: 0 0 5px #e11919;
+        }
 
-/* Ενέργειες */
-.act_cont {
-    height: 130px;
-    flex-wrap: wrap;
-    align-content: flex-end;
-}
+        .reason_input::placeholder {
+            color: #e11919;
+        }
 
-.actions {
-    width: 70%;
-}
+        /* Ενέργειες */
+        .act_cont {
+            height: 130px;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
 
-/* align items center */
-.acts,
-.act_but,
-.b_el {
-    align-items: center;
-}
+        .actions {
+            width: 70%;
+        }
 
-.acts {
-    width: 100%;
-    justify-items: center;
-}
- 
-.act {
-    width: 30%;
-    padding-left: 30px;
-}
+        /* align items center */
+        .acts,
+        .act_but,
+        .b_el {
+            align-items: center;
+        }
 
-.act_but {
-    background-color: #26890d;
-    border: #26890dbc 2px solid;
-    border-radius: 25px;
-    box-shadow: 1px 1px 5px rgb(71, 71, 71);
-    height: 70px;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
+        .acts {
+            width: 100%;
+            justify-items: center;
+        }
 
-.but_text {
-    font-size: 20px;
-    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-    font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 5px rgb(71, 71, 71);
-    padding-right: 10px;
-}
+        .act {
+            width: 30%;
+            padding-left: 30px;
+        }
 
-.but_text#text2 {
-    padding-right: 7px;
-}
+        .act_but {
+            background-color: #26890d;
+            border: #26890dbc 2px solid;
+            border-radius: 25px;
+            box-shadow: 1px 1px 5px rgb(71, 71, 71);
+            height: 70px;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
 
-.but_icon {
-    height: 35px;
-}
+        .but_text {
+            font-size: 20px;
+            font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 5px rgb(71, 71, 71);
+            padding-right: 10px;
+        }
 
-.but_icon#icon2 {
-    height: 42px;
-}
+        .but_text#text2 {
+            padding-right: 7px;
+        }
 
-.act_but:hover {
-    scale: 1.1;
-    background-color: #2da70f;
-    border-color: #2da70fab;
-    box-shadow: 2px 2px 5px #1f710a;
-}
-        </style>
+        .but_icon {
+            height: 35px;
+        }
+
+        .but_icon#icon2 {
+            height: 42px;
+        }
+
+        .act_but:hover {
+            scale: 1.1;
+            background-color: #2da70f;
+            border-color: #2da70fab;
+            box-shadow: 2px 2px 5px #1f710a;
+        }
+    </style>
 </head>
 
 <body>
@@ -255,13 +256,14 @@
                         </div>
                         <div class="act" id="submit">
                             <a href="ThirdPage.html">
-                            <button class="act_but" id="submit">
-                                <div class="b_el">
-                                    <span class="but_text" id="text2">Αποστολή Εξοδολογίου</span>
-                                    <img class="but_icon" id="icon2" src="../images/Submit_Icon.png" alt="Τελική Υποβολή">
-                                </div>
-                            </button>
-                        </a>
+                                <button class="act_but" id="submit">
+                                    <div class="b_el">
+                                        <span class="but_text" id="text2">Αποστολή Εξοδολογίου</span>
+                                        <img class="but_icon" id="icon2" src="../images/Submit_Icon.png"
+                                            alt="Τελική Υποβολή">
+                                    </div>
+                                </button>
+                            </a>
                         </div>
                         <div class="act" id="print">
                             <a href="">

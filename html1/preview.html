@@ -13,132 +13,136 @@
     <link rel="stylesheet" type="text/css" href="../css1/style.css">
     <style>
         .f_cont {
-    width: 60%;
-}
-.cont {
-    margin: 25px;
-}
-.form{
-    width: 100%;
-}
-.box {
-    margin: 55px 0 50px 0;
-}
-/* Επεξεργασία */
-.edit {
-    width: 15%;
-}
+            width: 60%;
+        }
 
-.edit .e_but {
-    background-color: #26890d;
-    border: #26890dbc 2px solid;
-    border-radius: 25px;
-    box-shadow: 1px 1px 5px rgb(92, 92, 92);
-    width: 180px;
-    cursor: pointer;
-}
+        .cont {
+            margin: 25px;
+        }
 
-.b_el {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
+        .form {
+            width: 100%;
+        }
 
-.b_el #text {
+        .box {
+            margin: 55px 0 50px 0;
+        }
 
-    color: white;
-    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
-    padding-right: 5px;
-    padding-left: 2px;
-}
+        /* Επεξεργασία */
+        .edit {
+            width: 15%;
+        }
 
-.b_el #icon {
-    height: 37px;
-}
+        .edit .e_but {
+            background-color: #26890d;
+            border: #26890dbc 2px solid;
+            border-radius: 25px;
+            box-shadow: 1px 1px 5px rgb(92, 92, 92);
+            width: 180px;
+            cursor: pointer;
+        }
 
-.e_but:hover {
-    scale: 1.1 1.1;
-    background-color: #2da70f;
-    border-color: #2da70fab;
-    box-shadow: 2px 2px 5px #1f710a;
-}
+        .b_el {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-/* Ενέργειες */
-.act_cont {
-    width: 18%;
-    position: relative;
-}
+        .b_el #text {
 
-.actions {
-    width: 18%;
-    position: fixed;
-    top: calc(50% + 35px);
-    transform: translateY(-50%);
-}
+            color: white;
+            font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+            font-size: 16px;
+            padding-right: 5px;
+            padding-left: 2px;
+        }
 
-.acts {
-    flex-direction: column;
-}
+        .b_el #icon {
+            height: 37px;
+        }
 
-/* align items center */
-.acts,
-.act_but {
-    align-items: center;
-}
+        .e_but:hover {
+            scale: 1.1 1.1;
+            background-color: #2da70f;
+            border-color: #2da70fab;
+            box-shadow: 2px 2px 5px #1f710a;
+        }
 
-.act {
-    width: 100%;
-    padding-bottom: 20px;
-}
+        /* Ενέργειες */
+        .act_cont {
+            width: 18%;
+            position: relative;
+        }
 
-.act_but {
-    background-color: #26890d;
-    border: #26890dbc 2px solid;
-    border-radius: 25px;
-    box-shadow: 1px 1px 5px rgb(71, 71, 71);
-    width: 100%;
-    height: 70px;
-    cursor: pointer;
-}
+        .actions {
+            width: 18%;
+            position: fixed;
+            top: calc(50% + 35px);
+            transform: translateY(-50%);
+        }
 
-.act_but#submit {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
+        .acts {
+            flex-direction: column;
+        }
 
-.but_text {
-    font-size: 20px;
-    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-    font-weight: bold;
-    color: white;
-    text-shadow: 1px 1px 5px rgb(71, 71, 71);
-    padding-right: 10px;
-}
+        /* align items center */
+        .acts,
+        .act_but {
+            align-items: center;
+        }
 
-.but_text#text2 {
-    padding-right: 7px;
-}
+        .act {
+            width: 100%;
+            padding-bottom: 20px;
+        }
 
-.but_icon {
-    height: 35px;
-}
+        .act_but {
+            background-color: #26890d;
+            border: #26890dbc 2px solid;
+            border-radius: 25px;
+            box-shadow: 1px 1px 5px rgb(71, 71, 71);
+            width: 100%;
+            height: 70px;
+            cursor: pointer;
+        }
 
-.but_icon#icon2 {
-    height: 42px;
-}
+        .act_but#submit {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
 
-.act_but:not(#submit):hover {
-    scale: 1.1 1.1;
-    background-color: #2da70f;
-    border-color: #2da70fab;
-    box-shadow: 2px 2px 5px #1f710a;
-}
+        .but_text {
+            font-size: 20px;
+            font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 5px rgb(71, 71, 71);
+            padding-right: 10px;
+        }
 
-.act_but,
-.e_but {
-    transition: all 0.2s ease;
-}
+        .but_text#text2 {
+            padding-right: 7px;
+        }
+
+        .but_icon {
+            height: 35px;
+        }
+
+        .but_icon#icon2 {
+            height: 42px;
+        }
+
+        .act_but:not(#submit):hover {
+            scale: 1.1 1.1;
+            background-color: #2da70f;
+            border-color: #2da70fab;
+            box-shadow: 2px 2px 5px #1f710a;
+        }
+
+        .act_but,
+        .e_but {
+            transition: all 0.2s ease;
+        }
     </style>
 </head>
 
@@ -226,12 +230,13 @@
                                                 <td>389</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -242,12 +247,13 @@
                                                 <td>389</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -258,12 +264,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -274,12 +281,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -290,12 +298,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -306,12 +315,13 @@
                                                 <td>389</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -322,12 +332,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -338,12 +349,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -354,12 +366,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -370,12 +383,13 @@
                                                 <td>454</td>
                                                 <td class="edit">
                                                     <a href="FirstPage.html">
-                                                    <button class="e_but">
-                                                        <div class="b_el">
-                                                            <span id="text">Επεξεργασία</span>
-                                                            <img id="icon" src="../images/Edit_Icon.png" alt="Επεξεργασία">
-                                                        </div>
-                                                    </button>
+                                                        <button class="e_but">
+                                                            <div class="b_el">
+                                                                <span id="text">Επεξεργασία</span>
+                                                                <img id="icon" src="../images/Edit_Icon.png"
+                                                                    alt="Επεξεργασία">
+                                                            </div>
+                                                        </button>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -394,31 +408,32 @@
                     <div class="acts">
                         <div class="act" id="save">
                             <a href="">
-                            <button class="act_but" id="save">
-                                <div class="b_el">
-                                    <span class="but_text" id="text1">Προσωρινή Αποθήκευση</span>
-                                    <img class="but_icon" src="../images/Save_Icon.png" alt="Προσωρινή Αποθήκευση">
-                                </div>
-                            </button>
-                        </a>
+                                <button class="act_but" id="save">
+                                    <div class="b_el">
+                                        <span class="but_text" id="text1">Προσωρινή Αποθήκευση</span>
+                                        <img class="but_icon" src="../images/Save_Icon.png" alt="Προσωρινή Αποθήκευση">
+                                    </div>
+                                </button>
+                            </a>
                         </div>
                         <div class="act" id="submit">
                             <button class="act_but" id="submit">
                                 <div class="b_el">
                                     <span class="but_text" id="text2">Τελική Υποβολή</span>
-                                    <img class="but_icon" id="icon2" src="../images/Submit_Icon.png" alt="Τελική Υποβολή">
+                                    <img class="but_icon" id="icon2" src="../images/Submit_Icon.png"
+                                        alt="Τελική Υποβολή">
                                 </div>
                             </button>
                         </div>
                         <div class="act" id="print">
-                        <a href="">
-                            <button class="act_but" id="print">
-                                <div class="b_el">
-                                    <span class="but_text">Εκτύπωση</span>
-                                    <img class="but_icon" src="../images/Print_Icon.png" alt="Εκτύπωση">
-                                </div>
-                            </button>
-                        </a>
+                            <a href="">
+                                <button class="act_but" id="print">
+                                    <div class="b_el">
+                                        <span class="but_text">Εκτύπωση</span>
+                                        <img class="but_icon" src="../images/Print_Icon.png" alt="Εκτύπωση">
+                                    </div>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

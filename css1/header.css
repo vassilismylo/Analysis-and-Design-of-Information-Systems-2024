@@ -2,7 +2,7 @@
 header {
     height: 70px;
 }
- 
+
 .header {
 
     overflow: visible;
@@ -19,7 +19,8 @@ header {
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
 }
 
-.head_left, .head_right {
+.head_left,
+.head_right {
     display: flex;
     align-items: center;
     height: 100%;
@@ -34,7 +35,7 @@ header {
 .nav_bar {
     height: 70px;
     position: relative;
-    left: 10px; 
+    left: 10px;
 }
 
 .nav_l {
@@ -68,7 +69,7 @@ header {
     color: #87bd25;
 }
 
-.nav_l li a{
+.nav_l li a {
     transition: color 0.3s;
 }
 
@@ -113,32 +114,37 @@ header {
     width: 20px;
 }
 
-#s_box::placeholder, #s_box:focus {
+#s_box::placeholder,
+#s_box:focus {
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
     color: white;
 }
 
-#s_box:hover, #s_but:hover {
+#s_box:hover,
+#s_but:hover {
     background-color: rgb(145, 145, 145);
 }
 
-#s_box, #s_but{
+#s_box,
+#s_but {
     transition-duration: 0.3s;
 }
 
-#s_box:focus-visible{
-    outline: white  1px solid;
+#s_box:focus-visible {
+    outline: white 1px solid;
     box-shadow: 0px 0px 5px white;
 }
 
 /* Ρυθμίσεις Γλώσσας & Χρήστη */
-.language, .user {
+.language,
+.user {
     margin: 15px 20px 10px 0;
     position: relative;
     z-index: 1600;
 }
 
-#lang_menu, #us_menu {
+#lang_menu,
+#us_menu {
     background-color: black;
     border: none;
     border-radius: 100%;
@@ -148,11 +154,13 @@ header {
     transition-duration: 0.3s;
 }
 
-#lang_menu:hover, #us_menu:hover {
+#lang_menu:hover,
+#us_menu:hover {
     background-color: rgb(26, 26, 26);
 }
 
-.lang_opt, .us_opt {
+.lang_opt,
+.us_opt {
     border-radius: 5px;
     position: absolute;
     display: block;
@@ -166,7 +174,8 @@ header {
     transition-duration: 0.3s;
 }
 
-.lang_opt a, .us_opt a {
+.lang_opt a,
+.us_opt a {
     display: block;
     padding: 5px;
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
@@ -177,16 +186,19 @@ header {
     transition-duration: 0.3s;
 }
 
-.lang_opt a:hover, .us_opt a:hover {
+.lang_opt a:hover,
+.us_opt a:hover {
     background-color: rgb(167, 165, 165);
 }
 
-.language:hover .lang_opt, .user:hover .us_opt {
+.language:hover .lang_opt,
+.user:hover .us_opt {
     pointer-events: auto;
     opacity: 1;
 }
 
-#globe_icon, #us_icon {
+#globe_icon,
+#us_icon {
     background-color: transparent;
     height: 30px;
 }
