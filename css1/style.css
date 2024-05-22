@@ -198,6 +198,7 @@ header {
 #gr {
     font-weight: bold;
 }
+
 * {
     text-transform: none !important;
 }
@@ -273,6 +274,10 @@ body {
 }
 .table {
     border-collapse: collapse;
+}
+.table tr{
+    border-bottom: 2px solid rgba(211, 211, 211);
+    transition: all 0.3s;
 }
 table th,
 .table td {
