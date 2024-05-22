@@ -1,519 +1,204 @@
-/* xrwmata
-laxani: #87bd25
-mesaio: #2fad0f
-skouro: #26890d*/
+* {
+    text-transform: none !important;
+}
 
+/* Βασικές Ρυθμίσεις Σώματος */
 body {
-
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
     background-color: #eaeaea;
 }
 
-header {
-
-    height: 70px;
-
-    .header {
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1500 !important;
-        display: flex;
-        align-items: center;
-        background-color: black;
-        height: 70px;
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-
-    }
-
-    #h_logo {
-
-        height: 35px;
-        padding: 20px;
-        padding-top: 25px;
-
-    }
-
-    .search {
-
-        overflow: hidden;
-        border-radius: 20px;
-        position: absolute;
-        right: 100px;
-        margin: 16.5px;
-        background-color: grey;
-
-    }
-
-    #s_box {
-
-        border: none;
-        height: 35px;
-        width: 200px;
-        border-radius: 20px;
-        background-color: transparent;
-        padding-inline-start: 15px;
-        padding-inline-end: 40px;
-
-    }
-
-    #s_but {
-
-        padding: 8px 13px 7px 13px;
-        right: 0;
-        background-color: transparent;
-        cursor: pointer;
-        border: none;
-        border-radius: 25px;
-        position: absolute;
-
-    }
-
-    #s_img {
-        height: 20px;
-        width: 20px;
-    }
-
-    #s_box::placeholder {
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        color: white;
-    }
-
-    #s_box:hover {
-        background-color: rgb(145, 145, 145);
-    }
-
-    #s_but:hover {
-        background-color: rgb(145, 145, 145);
-        
-    }
-
-    #s_box:focus {
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        color: white;
-    }
-
-    .language {
-
-        margin: 15px;
-        top: 0;
-        right: 48.5px;
-        position: absolute;
-    }
-
-    #lang_menu {
-
-        background-color: transparent;
-        border: none;
-        border-radius: 100%;
-        cursor: pointer;
-        padding: 6px;
-        position: absolute;
-        right: 0;
-        top: 0;
-
-    }
-
-    .lang_opt {
-
-        border-radius: 5px;
-        position: absolute;
-        display: block;
-        padding: 5px;
-        top: calc(100% + 43px);
-        right: 0;
-        background-color: grey;
-    }
-
-    .lang_opt a {
-
-        display: block;
-        padding: 5px;
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
-    }
-
-    #gr {
-        font-weight: bold;
-    }
-
-    #lang_menu:hover {
-        background-color: rgb(26, 26, 26);
-    }
-
-    .language:hover .lang_opt {
-
-        pointer-events: auto;
-        opacity: 1;
-    }
-
-    .lang_opt a:hover {
-        border-radius: 5px;
-        background-color: rgb(167, 165, 165);
-    }
-
-    .lang_opt:hover {
-        background-color: grey;
-    }
-
-    #globe_icon {
-        background-color: transparent;
-        height: 30px;
-    }
-
-    .user {
-
-        margin: 15px;
-        top: 0;
-        right: 0;
-        position: absolute;
-
-    }
-
-    #us_menu {
-
-        background-color: black;
-        border: none;
-        border-radius: 100%;
-        cursor: pointer;
-        padding: 5.5px;
-        position: absolute;
-        right: 0;
-        top: 0;
-
-    }
-
-    .us_opt {
-
-        border-radius: 5px;
-        position: absolute;
-        display: block;
-        padding: 5px;
-        top: calc(100% + 43px);
-        right: 0;
-        background-color: grey;
-
-    }
-
-    .us_opt a {
-
-        display: block;
-        padding: 5px;
-        font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
-        font-size: 14px;
-        color: white;
-        text-decoration: none;
-    }
-
-    #us_menu:hover {
-        background-color: rgb(26, 26, 26);
-    }
-
-    .user:hover .us_opt {
-        
-        pointer-events: auto;
-        opacity: 1;
-    }
-
-    .us_opt a:hover {
-        border-radius: 5px;
-        background-color: rgb(167, 165, 165);
-    }
-
-    .us_opt:hover {
-        background-color: grey;
-    }
-
-    #us_icon {
-        background-color: transparent;
-        height: 31px;
-    }
-
-    .nav_bar {
-
-        height: 70px;
-        position: relative;
-        left: 10px;
-    }
-
-    .nav_l {
-
-        
-        cursor: pointer;
-        list-style: none;
-        padding: 0px;
-        margin: 0;
-        overflow: hidden;
-
-    }
-
-    .nav_l li {
-
-        text-align: center;
-        padding: 24px 15px 24px 15px;
-        float: left;
-
-    }
-
-    .nav_l a {
-
-        text-decoration: none;
-        color: white;
-
-    }
-
-    .nav_l li:hover {
-
-        a {
-            color: #87bd25;
-        }
-
-        padding-bottom: 19.5px;
-        border-bottom: 4.5px solid #87bd25;
-    }
-
-    #s_box, #s_but, #lang_menu, #us_menu{
-
-        transition-duration: 0.3s;
-
-    }
-
-    .lang_opt a, .us_opt a{
-
-        transition-duration: 0.3s;
-    }
-
-    .lang_opt, .us_opt{
-
-        pointer-events: none;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-
-    .nav_l li a{
-
-        transition: color 0.3s;
-    }
-}
-
-
-
-.main_cont{
-
+/* Κύριο Περιεχόμενο */
+.main_cont {
     max-width: 100%;
+}
+
+/* display flex */
+.main_cont,
+.f_cont,
+.form,
+.box,
+.act_cont,
+.acts,
+.b_el {
     display: flex;
     justify-content: center;
-
 }
 
-.cont{
-
-    margin: 30px;
+/* Ρυθμίσεις Φόρμας */
+.cont {
+    margin: 25px;
 }
 
-.f_cont{
+.f_cont {
     position: relative;
-    width: 55%;
+    width: 60%;
 }
 
-.form{
-
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-
-}
-
-.box{
-
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 1px 1px 5px rgb(162, 162, 162);
-    padding: 25px;
-    padding-bottom: 50px;
-    margin: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    text-align: justify;
-    text-transform: none !important;
+.form,
+.box,
+.box li,
+.table,
+.b_el {
     width: 100%;
 }
 
-.fh_cont{
-
-    position: relative;
-    padding-top: 25px;
-    padding-bottom: 50px;
-
+.form {
+    justify-items: center;
 }
 
-.f_head{
+.box {
+    box-shadow: 1px 1px 5px rgb(162, 162, 162);
+    padding: 25px 25px 75px 25px;
+    margin: 55px 0 50px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    text-align: justify;
+}
 
-    
+.box,
+.table_cont,
+.table {
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Επικεφαλίδα Φόρμας */
+.fh_cont {
+    position: relative;
+    padding: 25px 0 50px 0;
+}
+
+.f_head {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    
 }
 
-.f_body{
-
+.f_body {
     line-height: 2;
-
 }
 
-.table_cont{
-
-    border: none;
-    border-radius: 5px;
+/* Ρυθμίσεις Πίνακα */
+.table_cont {
     margin: 0px 30px;
-    background-color: white;
     box-shadow: 1px 1px 4px 2px rgba(211, 211, 211, 0.615);
-
+    overflow: auto;
 }
 
-.table{
-    
-    width: 100%;
+.table {
     border-collapse: collapse;
-    border-radius: 5px;
 }
 
-.table th, td{
-
+.table th,
+td {
     font-size: 16px;
     padding: 10px 30px;
     text-align: left;
 }
 
-.table tr{
-    
-    max-width: min-content;
+.table tr {
+    max-width: 100%;
     border-bottom: 2px solid rgba(211, 211, 211);
+    transition: all 0.3s ease;
 }
 
-.table thead{
-
+.table thead {
     border: none;
     line-height: 2.75;
-    
 }
 
-.edit{
-
-    float: right;
-}
-
-.table tbody tr:hover{
-
+.table tbody tr:hover {
     background-color: #e8e8e8e3;
 }
 
-.edit .e_but{
+/* Επεξεργασία */
+.edit {
+    width: 15%;
+}
 
+.edit .e_but {
     background-color: #26890d;
     border: #26890dbc 2px solid;
     border-radius: 25px;
     box-shadow: 1px 1px 5px rgb(92, 92, 92);
-    align-items: center;
     width: 180px;
     cursor: pointer;
-
 }
 
-.b_el{
-
-    width: 100%;
+.b_el {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.b_el #text{
+.b_el #text {
 
     color: white;
-    font-family:'Open Sans', Verdana, Helvetica, sans-serif;
+    font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
     font-size: 16px;
     padding-right: 5px;
     padding-left: 2px;
 }
 
-.b_el #icon{
-
+.b_el #icon {
     height: 37px;
-
 }
 
-.edit .e_but:hover{
-
+.e_but:hover {
     scale: 1.1 1.1;
     background-color: #2da70f;
     border-color: #2da70fab;
     box-shadow: 2px 2px 5px #1f710a;
 }
 
-.act_cont{
-
+/* Ενέργειες */
+.act_cont {
     width: 18%;
     position: relative;
-
 }
 
-.actions{
-    
+.actions {
+    width: 18%;
     position: fixed;
     top: calc(50% + 35px);
     transform: translateY(-50%);
-
 }
 
-.acts{
-
-    display: flex;
-    justify-items: center;
+.acts {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-.act{
+/* align items center */
+.acts,
+.act_but {
+    align-items: center;
+}
 
+.act {
+    width: 100%;
     padding-bottom: 20px;
 }
 
-.act_but{
-
+.act_but {
     background-color: #26890d;
     border: #26890dbc 2px solid;
     border-radius: 25px;
     box-shadow: 1px 1px 5px rgb(71, 71, 71);
-    align-items: center;
-    width: 350px;
+    width: 100%;
     height: 70px;
     cursor: pointer;
-
 }
 
-.act_but#submit{
-
+.act_but#submit {
     opacity: 0.6;
     cursor: not-allowed;
-
 }
 
-.but_text{
-
+.but_text {
     font-size: 20px;
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
     font-weight: bold;
@@ -522,38 +207,26 @@ header {
     padding-right: 10px;
 }
 
-.but_text#text2{
-
+.but_text#text2 {
     padding-right: 7px;
-
 }
 
-.but_icon{
-
+.but_icon {
     height: 35px;
-    
 }
 
-.but_icon#icon2{
-
+.but_icon#icon2 {
     height: 42px;
-
 }
 
-.act_but:not(#submit):hover{
-
+.act_but:not(#submit):hover {
     scale: 1.1 1.1;
     background-color: #2da70f;
     border-color: #2da70fab;
     box-shadow: 2px 2px 5px #1f710a;
 }
 
-.act_but, .e_but{
-
+.act_but,
+.e_but {
     transition: all 0.2s ease;
-}
-
-.table tbody tr{
-
-    transition: all 0.3s ease;
 }

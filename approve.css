@@ -1,4 +1,4 @@
-*{
+* {
     text-transform: none;
 }
 
@@ -31,7 +31,8 @@ header {
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
 }
 
-.head_left, .head_right {
+.head_left,
+.head_right {
     display: flex;
     align-items: center;
     height: 100%;
@@ -46,7 +47,7 @@ header {
 .nav_bar {
     height: 70px;
     position: relative;
-    left: 10px; 
+    left: 10px;
 }
 
 .nav_l {
@@ -80,7 +81,7 @@ header {
     color: #87bd25;
 }
 
-.nav_l li a{
+.nav_l li a {
     transition: color 0.3s;
 }
 
@@ -125,32 +126,37 @@ header {
     width: 20px;
 }
 
-#s_box::placeholder, #s_box:focus {
+#s_box::placeholder,
+#s_box:focus {
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
     color: white;
 }
 
-#s_box:hover, #s_but:hover {
+#s_box:hover,
+#s_but:hover {
     background-color: rgb(145, 145, 145);
 }
 
-#s_box, #s_but{
+#s_box,
+#s_but {
     transition-duration: 0.3s;
 }
 
-#s_box:focus-visible{
-    outline: white  1px solid;
+#s_box:focus-visible {
+    outline: white 1px solid;
     box-shadow: 0px 0px 5px white;
 }
 
 /* Ρυθμίσεις Γλώσσας & Χρήστη */
-.language, .user {
+.language,
+.user {
     margin: 15px 20px 10px 0;
     position: relative;
     z-index: 1600;
 }
 
-#lang_menu, #us_menu {
+#lang_menu,
+#us_menu {
     background-color: black;
     border: none;
     border-radius: 100%;
@@ -160,11 +166,13 @@ header {
     transition-duration: 0.3s;
 }
 
-#lang_menu:hover, #us_menu:hover {
+#lang_menu:hover,
+#us_menu:hover {
     background-color: rgb(26, 26, 26);
 }
 
-.lang_opt, .us_opt {
+.lang_opt,
+.us_opt {
     border-radius: 5px;
     position: absolute;
     display: block;
@@ -178,7 +186,8 @@ header {
     transition-duration: 0.3s;
 }
 
-.lang_opt a, .us_opt a {
+.lang_opt a,
+.us_opt a {
     display: block;
     padding: 5px;
     font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
@@ -189,16 +198,19 @@ header {
     transition-duration: 0.3s;
 }
 
-.lang_opt a:hover, .us_opt a:hover {
+.lang_opt a:hover,
+.us_opt a:hover {
     background-color: rgb(167, 165, 165);
 }
 
-.language:hover .lang_opt, .user:hover .us_opt {
+.language:hover .lang_opt,
+.user:hover .us_opt {
     pointer-events: auto;
     opacity: 1;
 }
 
-#globe_icon, #us_icon {
+#globe_icon,
+#us_icon {
     background-color: transparent;
     height: 30px;
 }
@@ -216,14 +228,24 @@ header {
     max-width: 100%;
     flex-direction: column;
 }
+
 /* display flex */
-.main_cont, .f_cont, .form, .box, .act_cont, .acts, .b_el{
+.main_cont,
+.f_cont,
+.form,
+.box,
+.act_cont,
+.acts,
+.b_el {
     display: flex;
     justify-content: center;
 }
 
 /* Ρυθμίσεις Φόρμας */
-.cont, .box, .box li{
+.f_cont,
+.box,
+.box li,
+.table {
     width: 100%;
 }
 
@@ -232,13 +254,13 @@ header {
 }
 
 .form {
-    justify-items: center;
     width: 80%;
+    justify-items: center;
 }
 
 .box {
     padding: 25px 25px 75px 25px;
-    margin: 25px 0 50px;
+    margin: 25px 0 50px 0;
     flex-wrap: wrap;
     flex-direction: column;
     list-style: none;
@@ -246,7 +268,9 @@ header {
     box-shadow: 1px 1px 5px rgb(162, 162, 162);
 }
 
-.box, .table_cont, .table{
+.box,
+.table_cont,
+.table {
     border-radius: 5px;
     background-color: white;
 }
@@ -275,11 +299,11 @@ header {
 }
 
 .table {
-    width: 100%;
     border-collapse: collapse;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     font-size: 16px;
     padding: 10px 30px;
     text-align: left;
@@ -312,7 +336,7 @@ header {
 }
 
 .opt input[type="radio"] {
-    display: none; 
+    display: none;
 }
 
 .opt label {
@@ -351,17 +375,17 @@ header {
     border: #2da70fbc 2px solid;
 }
 
-.opt input[id^="approve"]:checked ~ label[for^="approve"] {
+.opt input[id^="approve"]:checked~label[for^="approve"] {
     background-color: #2da70f;
     color: white;
 }
 
-.opt input[id^="reject"]:checked ~ label[for^="reject"] {
+.opt input[id^="reject"]:checked~label[for^="reject"] {
     background-color: #e61212;
     color: white;
 }
 
-.opt input[id^="reject"]:checked ~ .reason_cont .reason_input {
+.opt input[id^="reject"]:checked~.reason_cont .reason_input {
     cursor: pointer;
     pointer-events: auto;
     opacity: 1;
@@ -403,11 +427,12 @@ header {
 
 .actions {
     width: 70%;
-    display: flex;
 }
 
 /* align items center */
-.acts, .act_but, .b_el{
+.acts,
+.act_but,
+.b_el {
     align-items: center;
 }
 
@@ -459,4 +484,3 @@ header {
     border-color: #2da70fab;
     box-shadow: 2px 2px 5px #1f710a;
 }
-
