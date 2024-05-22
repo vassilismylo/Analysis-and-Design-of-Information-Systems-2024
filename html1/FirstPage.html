@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Φόρμα Εξοδολογίου</title>
+    <link rel="icon" href="../images/Deloitte_Symbol.png">
+    <link rel="stylesheet" href="../css1/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        } 
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 950px;
+            max-width: 100%;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 220px;
+            row-gap: 30px;
+            align-items: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        input, select, textarea {
+            padding: 20px;
+            font-size: 1.2rem;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            width: 150%;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            padding: 0;
+        }
+
+        .button-container {
+            grid-column: span 2;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+            margin-left: 700px;
+        }
+
+        button {
+            background-color: #26890d;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        button:hover {
+            background-color: #2fad0f;
+            transform: scale(1.025);
+        }
+
+        .right-container {
+            grid-column: span 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-container input,
+        .right-container button,
+        .right-container textarea {
+            margin-bottom: 20px;
+            width: 150%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <div class="header">
+
+            <div class="head_left">
+                <a href="index.html">
+                    <img id="h_logo" src="../images/Deloitte_Logo.png" alt="Deloitte">
+                </a>
+
+                <div class="nav_bar">
+                    <ul class="nav_l">
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="">Χρήστης</a></li>
+                        <li><a href="">Ρυθμίσεις</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="head_right">
+                <div class="search">
+                    <form>
+                        <input id="s_box" type="text" placeholder="Αναζήτηση..." autocomplete="off">
+                        <button id="s_but">
+                            <img id="s_img" src="../images/Search_Icon.png" alt="Search">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="language">
+                    <button id="lang_menu">
+                        <img id="globe_icon" src="../images/Globe_Icon.png" alt="Switch Language">
+                    </button>
+                    <div class="lang_opt">
+                        <a id="gr" href="">Ελληνικά</a>
+                        <a id="en" href="">English</a>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <button id="us_menu">
+                        <img id="us_icon" src="../images/User_Icon.png" alt="User">
+                    </button>
+                    <div class="us_opt">
+                        <a href="">Χρήστης</a>
+                        <a href="">Ρυθμίσεις</a>
+                        <a href="">Αποσύνδεση</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+<main>
+    <div class="form-container">
+        <h2>Φόρμα Εξοδολογίου</h2>
+        <form class="form" action="preview.htmls" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="expense-type">Επιλέξτε Τύπο Εξόδου:</label>
+                <select id="expense-type" name="expense-type" required>
+                    <option value="">--Επιλέξτε--</option>
+                    <option value="fuel">Καύσιμα</option>
+                    <option value="parking">Πάρκινγκ</option>
+                    <option value="trabel">Ταξίδια</option>
+                    <option value="fare">Διόδια</option>
+                    <option value="transportation">Ταξί/ΜΜΜ</option>
+                    <option value="other">Άλλο</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Ποσό(&euro;):</label>
+                <input type="number" id="amount" name="amount" min="0" step="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="receipt">Ανέβασμα Δικαιολογητικών(pdf,word,jpeg...):</label>
+                <input type="file" id="receipt" name="receipt" required>
+            </div>
+
+            <div class="form-group right-container">
+                <label for="wbs">Αντιστοίχιση WBS:</label>
+                <input type="text" id="wbs-search" name="wbs-search" placeholder="Αναζήτηση WBS..." required>
+
+                <label for="percentage">Ποσοστό(%):</label>
+                <input type="number" id="percentage" name="percentage" value="100" min="0" max="100" step="1" required>
+
+                <button type="button">Προσθέστε WBS</button>
+
+                <label for="comments">Σχόλια:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Επιπλέον αιτιολόγηση..."></textarea>
+            </div>
+
+            <div class="button-container">
+               <button type="submit">Συνέχεια</button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
