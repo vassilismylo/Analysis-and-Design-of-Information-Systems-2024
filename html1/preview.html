@@ -143,6 +143,53 @@
         .e_but {
             transition: all 0.2s ease;
         }
+        @media (max-width: 480px) {
+    .f_cont, .act_cont {
+        width: 100%;
+    }
+
+    .form {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+
+    .table_cont {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .table {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .table th, .table td {
+        padding: 8px 5px;
+    }
+
+    .edit {
+        width: 100%;
+        text-align: center;
+    }
+
+    .edit .e_but {
+        width: 100px;
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .actions {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .act_but {
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
     </style>
 </head>
 

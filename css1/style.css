@@ -319,3 +319,48 @@ table th,
 .table tbody tr:hover {
     background-color: #e8e8e8e3;
 }
+
+@media (max-width: 768px) {
+    /* Προσαρμογές Header */
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+    }
+
+    .head_left, .head_right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    #h_logo {
+        height: 25px;
+        padding: 5px;
+    }
+
+    /* Προσαρμογές Πλοήγησης */
+    .nav_l {
+        flex-direction: column;
+    }
+
+    .nav_l li {
+        padding: 8px;
+    }
+
+    /* Προσαρμογές Αναζήτησης */
+    .search {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #s_box {
+        width: 70%;
+        padding: 8px;
+    }
+
+    /* Προσαρμογές Γλώσσας & Χρήστη */
+    .language, .user {
+        margin: 5px;
+    }
+}
